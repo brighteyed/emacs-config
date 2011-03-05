@@ -30,9 +30,5 @@
 (add-to-list 'default-frame-alist '(width . 125))
 (add-to-list 'default-frame-alist '(height . 45))
 
-;; Define default font
-(when (string= system-name "brighteyed-laptop")
-  (setq default-font-desc "-unknown-Liberation Mono-normal-normal-normal-*-14-*-*-*-m-0-iso10646-1"))
-
 ;; Set default font
 (set-frame-font default-font-desc)
