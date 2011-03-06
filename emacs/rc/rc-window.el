@@ -25,10 +25,9 @@
 (global-hl-line-mode t)       ;; Turn hightlight on
 
 ;; Frame position and size
-(add-to-list 'default-frame-alist '(top . 60))
-(add-to-list 'default-frame-alist '(left . 250))
-(add-to-list 'default-frame-alist '(width . 125))
-(add-to-list 'default-frame-alist '(height . 45))
+(mapc (lambda (p)
+	(add-to-list 'default-frame-alist p))
+      default-frame-rect)
 
 ;; Set default font
 (set-frame-font default-font-desc)
