@@ -48,6 +48,9 @@
 
 (el-get 'sync)
 
+;; customization
+(load "~/emacs/rc/rc-custom.el")
+
 ;; window settings
 (load "~/emacs/rc/rc-window.el")
 
