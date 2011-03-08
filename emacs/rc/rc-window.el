@@ -31,3 +31,6 @@
 
 ;; Set default font
 (set-frame-font default-font-desc)
+
+;; Ido mode
+(ido-mode t)

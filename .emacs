@@ -42,4 +42,6 @@
 
 ;; Bind a key to ~/.emacs
 (global-set-key (kbd "<f11>")
-		(lambda() (interactive) (find-file "~/.emacs")))
+		(lambda() 
+		  (interactive) 
+		  (find-file "~/.emacs")))

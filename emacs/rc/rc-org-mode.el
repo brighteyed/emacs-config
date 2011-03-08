@@ -13,4 +13,5 @@
 ;; Bind a key to default org file buffer
 (global-set-key (kbd "C-<f11>")
 		(lambda () 
+		  (interactive)
 		  (find-file default-org-file)))
