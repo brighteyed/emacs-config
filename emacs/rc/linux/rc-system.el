@@ -1,3 +1,4 @@
+
 ;; Custom Emacs configuration
 ;;
 ;;   Sergey Kondrikov, sergey.kondrikov@gmail.com
@@ -8,7 +9,12 @@
 (require 'el-get)
 
 (setq el-get-sources
-      '(el-get go-mode js2-mode ruby-block ruby-end switch-window
+      '(el-get package
+	       go-mode
+	       js2-mode
+	       ruby-block
+	       ruby-end
+	       switch-window
 
 	       ;; cmake-mode
 	       (:name cmake-mode
@@ -22,14 +28,13 @@
 			       (edit-server-start)))
 
 	       ;; emacs-goodies-el
-	       (:name emacs-goodies-el :type apt-get)
+	       (:name emacs-goodies-el
+		      :type apt-get)
 
 	       ;; color-theme-railscasts
 	       (:name color-theme-railscasts
 		      :after (lambda ()
 			       (color-theme-initialize)
 			       (load-file (concat el-get-dir "color-theme-railscasts/color-theme-railscasts.el"))
-			       (color-theme-railscasts)))
-	       ))
-
+			       (color-theme-railscasts)))))
 (el-get 'sync)
