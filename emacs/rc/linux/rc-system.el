@@ -14,6 +14,7 @@
 	       js2-mode
 	       ruby-block
 	       ruby-end
+	       rvm
 	       switch-window
 
 	       ;; cmake-mode
