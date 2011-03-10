@@ -15,7 +15,7 @@
   "Package PKG source directory"
   (concat "~/emacs/rc/win/packages/" pkg))
 
-;; add path to each package to load-path
+;; append path to each package to load-path list
 (let ((package-dir-list '((package-dir "cmake-mode")
 			  (package-dir "color-theme-6.6.0")
 			  (package-dir "edit-server")

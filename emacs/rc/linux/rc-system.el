@@ -1,4 +1,3 @@
-
 ;; Custom Emacs configuration
 ;;
 ;;   Sergey Kondrikov, sergey.kondrikov@gmail.com
@@ -39,3 +38,6 @@
 			       (load-file (concat el-get-dir "color-theme-railscasts/color-theme-railscasts.el"))
 			       (color-theme-railscasts)))))
 (el-get 'sync)
+
+;; ido mode
+(load "rc-ido-mode.el")
