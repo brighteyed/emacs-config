@@ -41,6 +41,9 @@
 (load "~/emacs/rc/rc-org-mode.el")
 (load "~/emacs/rc/rc-cua-mode.el")
 
+;; lisp mode
+(load "~/emacs/rc/rc-lisp.el")
+
 ;; Bind a key to ~/.emacs
 (global-set-key (kbd "<f11>")
 		(lambda() 
