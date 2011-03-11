@@ -38,6 +38,7 @@
 
 ;; modes settings
 (load "~/emacs/rc/rc-recentf-mode.el")
+(load "~/emacs/rc/rc-ruby-mode.el")
 (load "~/emacs/rc/rc-org-mode.el")
 (load "~/emacs/rc/rc-cua-mode.el")
 
