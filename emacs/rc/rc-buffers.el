@@ -33,10 +33,15 @@
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'forward)
 
+;; Highlight symbol under cursor
+(require 'highlight-symbol)
+(global-set-key (kbd "C-<f3>") 'highlight-symbol-at-point)
+(global-set-key (kbd "S-<f3>") 'highlight-symbol-prev)
+(global-set-key (kbd "<f3>") 'highlight-symbol-next)
+
 ;; Buffers management
 (defun kill-other-buffers ()
   "Kill other file visiting buffers"
-
   (interactive)
   (mapc 'kill-buffer 
 	(delq (current-buffer)

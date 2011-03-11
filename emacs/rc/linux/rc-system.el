@@ -9,34 +9,36 @@
 
 (setq el-get-sources
       '(el-get package
-	       go-mode
-	       js2-mode
-	       ruby-block
-	       ruby-end
-	       rvm
-	       switch-window
+               go-mode
+               highlight-parentheses
+               highlight-symbol
+               js2-mode
+               ruby-block
+               ruby-end
+               rvm
+               switch-window
 
-	       ;; cmake-mode
-	       (:name cmake-mode
-		      :after (lambda ()
-			       (add-to-list 'auto-mode-alist '("CMakeLists\\.txt\\'" . cmake-mode))))
+               ;; cmake-mode
+               (:name cmake-mode
+                      :after (lambda ()
+                               (add-to-list 'auto-mode-alist '("CMakeLists\\.txt\\'" . cmake-mode))))
 
-	       ;; edit-server
-	       (:name edit-server
-		      :features edit-server
-		      :after (lambda ()
-			       (edit-server-start)))
+               ;; edit-server
+               (:name edit-server
+                      :features edit-server
+                      :after (lambda ()
+                               (edit-server-start)))
 
-	       ;; emacs-goodies-el
-	       (:name emacs-goodies-el
-		      :type apt-get)
+               ;; emacs-goodies-el
+               (:name emacs-goodies-el
+                      :type apt-get)
 
-	       ;; color-theme-railscasts
-	       (:name color-theme-railscasts
-		      :after (lambda ()
-			       (color-theme-initialize)
-			       (load-file (concat el-get-dir "color-theme-railscasts/color-theme-railscasts.el"))
-			       (color-theme-railscasts)))))
+               ;; color-theme-railscasts
+               (:name color-theme-railscasts
+                      :after (lambda ()
+                               (color-theme-initialize)
+                               (load-file (concat el-get-dir "color-theme-railscasts/color-theme-railscasts.el"))
+                               (color-theme-railscasts)))))
 (el-get 'sync)
 
 ;; ido mode
