@@ -8,26 +8,21 @@
 
 ;; encoding
 (set-selection-coding-system 'utf-16le-dos)
+(set-terminal-coding-system 'cp866)
 (prefer-coding-system  'utf-8)
+
+;; append path to each package to load-path list
+(dolist (file (directory-files "~/emacs/rc/win/packages/" t))
+  (unless
+      (or
+       (string-match-p "\\(?:\\.\\|\\.\\.\\)$" file)
+       (not (file-directory-p file)))
+    (add-to-list 'load-path file)))
 
 ;; helper function
 (defun package-dir (pkg)
   "Package PKG source directory"
   (concat "~/emacs/rc/win/packages/" pkg))
-
-;; append path to each package to load-path list
-(let ((package-dir-list '((package-dir "cmake-mode")
-			  (package-dir "color-theme-6.6.0")
-			  (package-dir "edit-server")
-			  (package-dir  "go-mode")
-			  (package-dir  "js2-mode")
-			  (package-dir  "ruby-block")
-			  (package-dir  "ruby-end")
-			  (package-dir  "switch-window")
-			  (package-dir  "yasnippet"))))
-  (mapc (lambda (p)
-	  (add-to-list 'load-path (eval p)))
-	package-dir-list))
 
 ;; cmake-mode
 (require 'cmake-mode)

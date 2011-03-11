@@ -17,6 +17,8 @@
 (toggle-scroll-bar 0)
 (tool-bar-mode 0)
 
+;; Do no insert tabs doing indendation
+(setq-default indent-tabs-mode nil)
 ;; Tab width
 (setq tab-width 2)
 
