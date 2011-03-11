@@ -29,6 +29,10 @@
 (put 'narrow-to-region 'disabled nil)
 (put 'narrow-to-page 'disabled nil)
 
+;; Add parts of each file's directory to the buffer name if not unique
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'forward)
+
 ;; Buffers management
 (defun kill-other-buffers ()
   "Kill other file visiting buffers"

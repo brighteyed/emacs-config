@@ -12,5 +12,5 @@
 ;; open recent file
 (global-set-key (kbd "M-<f11>")
 		(lambda() 
-		  (interactive) 
-		  (find-file (ido-completing-read "Open file: " recentf-list nil t))))
+		  (interactive)
+		  (find-file (completing-read "Open file: " recentf-list nil t))))

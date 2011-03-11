@@ -36,11 +36,17 @@
 ;; buffers settings
 (load "~/emacs/rc/rc-buffers.el")
 
+;; backup settings
+(load "~/emacs/rc/rc-backup.el")
+
 ;; modes settings
 (load "~/emacs/rc/rc-recentf-mode.el")
 (load "~/emacs/rc/rc-ruby-mode.el")
 (load "~/emacs/rc/rc-org-mode.el")
 (load "~/emacs/rc/rc-cua-mode.el")
+
+;; lisp mode
+(load "~/emacs/rc/rc-lisp.el")
 
 ;; Bind a key to ~/.emacs
 (global-set-key (kbd "<f11>")
