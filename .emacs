@@ -36,6 +36,9 @@
 ;; buffers settings
 (load "~/emacs/rc/rc-buffers.el")
 
+;; backup settings
+(load "~/emacs/rc/rc-backup.el")
+
 ;; modes settings
 (load "~/emacs/rc/rc-recentf-mode.el")
 (load "~/emacs/rc/rc-org-mode.el")
