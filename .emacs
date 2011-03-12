@@ -19,34 +19,34 @@
 
 ;; system specific setup
 (when (equal system-type 'gnu/linux)
-  (push "~/emacs/rc/linux" load-path))
+  (push "~/emacs/linux" load-path))
 
 (when (equal system-type 'windows-nt)
-  (push "~/emacs/rc/win" load-path))
+  (push "~/emacs/win" load-path))
 
 ;; customization
-(load "rc-custom.el")
+(load "ecfg-custom.el")
 
 ;; system specific settings
-(load "rc-system.el")
+(load "ecfg-system.el")
 
 ;; window settings
-(load "~/emacs/rc/rc-window.el")
+(load "~/emacs/ecfg-window.el")
 
 ;; buffers settings
-(load "~/emacs/rc/rc-buffers.el")
+(load "~/emacs/ecfg-buffers.el")
 
 ;; backup settings
-(load "~/emacs/rc/rc-backup.el")
+(load "~/emacs/ecfg-backup.el")
 
 ;; modes settings
-(load "~/emacs/rc/rc-recentf-mode.el")
-(load "~/emacs/rc/rc-ruby-mode.el")
-(load "~/emacs/rc/rc-org-mode.el")
-(load "~/emacs/rc/rc-cua-mode.el")
+(load "~/emacs/ecfg-recentf-mode.el")
+(load "~/emacs/ecfg-ruby-mode.el")
+(load "~/emacs/ecfg-org-mode.el")
+(load "~/emacs/ecfg-cua-mode.el")
 
 ;; lisp mode
-(load "~/emacs/rc/rc-lisp.el")
+(load "~/emacs/ecfg-lisp.el")
 
 ;; Bind a key to ~/.emacs
 (global-set-key (kbd "<f11>")

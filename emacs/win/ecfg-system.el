@@ -12,7 +12,7 @@
 (prefer-coding-system  'utf-8)
 
 ;; append path to each package to load-path list
-(dolist (file (directory-files "~/emacs/rc/win/packages/" t))
+(dolist (file (directory-files "~/emacs/win/packages/" t))
   (unless
       (or
        (string-match-p "\\(?:\\.\\|\\.\\.\\)$" file)

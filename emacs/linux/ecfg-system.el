@@ -42,4 +42,4 @@
 (el-get 'sync)
 
 ;; ido mode
-(load "rc-ido-mode.el")
+(load "ecfg-ido-mode.el")
