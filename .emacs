@@ -24,6 +24,9 @@
 (when (equal system-type 'windows-nt)
   (push "~/emacs/win" load-path))
 
+;; install all necessary packages
+(load "ecfg-packages.el")
+
 ;; customization
 (load "ecfg-custom.el")
 
@@ -39,14 +42,17 @@
 ;; backup settings
 (load "~/emacs/ecfg-backup.el")
 
-;; modes settings
-(load "~/emacs/ecfg-recentf-mode.el")
-(load "~/emacs/ecfg-ruby-mode.el")
-(load "~/emacs/ecfg-org-mode.el")
-(load "~/emacs/ecfg-cua-mode.el")
-
-;; lisp mode
+;; mode specific settings
+(load "~/emacs/ecfg-cmake.el")
+(load "~/emacs/ecfg-color-theme.el")
+(load "~/emacs/ecfg-cua.el")
+(load "~/emacs/ecfg-edit-server.el")
+(load "~/emacs/ecfg-go.el")
+(load "~/emacs/ecfg-js.el")
 (load "~/emacs/ecfg-lisp.el")
+(load "~/emacs/ecfg-org.el")
+(load "~/emacs/ecfg-recentf.el")
+(load "~/emacs/ecfg-ruby.el")
 
 ;; Bind a key to ~/.emacs
 (global-set-key (kbd "<f11>")

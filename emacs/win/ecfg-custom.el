@@ -13,6 +13,9 @@
   (defvar default-frame-rect '((top . 20) (left . 110) (width . 130) (height . 55))
     "Size and position of a window"))
 
+(defvar ecfg-packages-dir "~/emacs/win/packages/"
+  "Packages directory")
+
 (defvar default-org-file "C:/My Dropbox/scratch.org"
   "Default org file")
 

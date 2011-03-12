@@ -3,8 +3,11 @@
 ;;   Sergey Kondrikov, sergey.kondrikov@gmail.com
 ;;   2008-2011
 
-(defvar default-frame-rect '((top . 50) (left . 250) (width . 125) (height . 45))
+(defvar default-frame-rect '((top . 50) (left . 250) (width . 125) (height . 55))
   "Size and position of a window")
+
+(defvar ecfg-packages-dir el-get-dir
+  "Packages directory")
 
 (defvar default-org-file "~/secure/Dropbox/scratch.org"
   "Default org file")
