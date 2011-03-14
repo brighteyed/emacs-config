@@ -1,2 +1,2 @@
 * Overview
-This is my personal emacs configuration. It uses [[https://github.com/dimitri/el-get][el-get]] to install packages on Linux. To work on Windows all necessary packages must be copyed to ~/emacs/win/packages.
+This is my personal emacs configuration. It uses [[https://github.com/dimitri/el-get][el-get]] to install packages on Linux. To work on Windows all necessary packages must be copied to ~/emacs/win/packages.
