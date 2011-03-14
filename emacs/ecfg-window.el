@@ -3,33 +3,33 @@
 ;;   Sergey Kondrikov, sergey.kondrikov@gmail.com
 ;;   2008-2011
 
-;; Disable splash screen
+;; disable splash screen
 (setq inhibit-splash-screen t)
 
-;; Display date and time
+;; display date and time
 (setq display-time-day-and-date 1)
 (display-time-mode)
 
-;; Display current column
+;; display current column
 (column-number-mode 1)
 
-;; Turn vertical scroll bars and toolbar off
+;; turn vertical scroll bars and toolbar off
 (toggle-scroll-bar 0)
 (tool-bar-mode 0)
 
-;; Do no insert tabs doing indendation
+;; do no insert tabs doing indendation
 (setq-default indent-tabs-mode nil)
-;; Tab width
+;; tab width
 (setq tab-width 2)
 
-;; Highlight current line
-(setq hl-line-face 'hl-line)  ;; Set highlight face
-(global-hl-line-mode t)       ;; Turn hightlight on
+;; highlight current line
+(setq hl-line-face 'hl-line)  ;; set highlight face
+(global-hl-line-mode t)       ;; turn hightlight on
 
-;; Frame position and size
+;; frame position and size
 (mapc (lambda (p)
 	(add-to-list 'default-frame-alist p))
-      default-frame-rect)
+      ecfg-default-frame-rect)
 
-;; Set default font
-(set-frame-font default-font-desc)
+;; set default font
+(set-frame-font ecfg-default-font-desc)
