@@ -14,4 +14,4 @@
 (global-set-key (kbd "C-<f11>")
 		(lambda () 
 		  (interactive)
-		  (find-file default-org-file)))
+		  (find-file ecfg-default-org-file)))

@@ -11,6 +11,3 @@
 
 (defvar ecfg-default-org-file "~/secure/Dropbox/scratch.org"
   "Default org file")
-
-(defvar ecfg-packages-dir el-get-dir
-  "Packages directory")

@@ -24,11 +24,11 @@
 (when (equal system-type 'windows-nt)
   (push "~/emacs/win" load-path))
 
-;; install all necessary packages
-(load "ecfg-packages.el")
-
-;; customization
+;; define customization variables
 (load "ecfg-custom.el")
+
+;; install packages
+(load "ecfg-packages.el")
 
 ;; system specific settings
 (load "ecfg-system.el")

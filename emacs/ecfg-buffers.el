@@ -38,6 +38,7 @@
 
 ;; yasnippet
 (require 'yasnippet)
+(yas/initialize)
 
 ;; highlight symbol under cursor
 (require 'highlight-symbol)

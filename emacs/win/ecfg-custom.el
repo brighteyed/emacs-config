@@ -18,6 +18,3 @@
 
 (defvar ecfg-default-org-file "C:/My Dropbox/scratch.org"
   "Default org file")
-
-(defvar ecfg-packages-dir "~/emacs/win/packages/"
-  "Packages directory")
