@@ -8,10 +8,10 @@
 (add-to-list 'auto-mode-alist
 	     '("\\.org$" . org-mode))
 
-(find-file default-org-file)
+(find-file ecfg-default-org-file)
 
 ;; Bind a key to default org file buffer
 (global-set-key (kbd "C-<f11>")
 		(lambda () 
 		  (interactive)
-		  (find-file default-org-file)))
+		  (find-file ecfg-default-org-file)))
