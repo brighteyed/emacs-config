@@ -46,10 +46,29 @@
 (global-set-key (kbd "S-<f3>") 'highlight-symbol-prev)
 (global-set-key (kbd "<f3>") 'highlight-symbol-next)
 
+;; indentation
+(global-set-key (kbd "C-M-r")
+                (lambda ()
+                  (interactive)
+                  (indent-region (point-min) (point-max))))
+
 ;; buffers management
-(defun kill-other-buffers ()
+(defun ecfg-kill-other-buffers ()
   "Kill other file visiting buffers"
   (interactive)
   (mapc 'kill-buffer 
 	(delq (current-buffer)
 	      (remove-if-not 'buffer-file-name (buffer-list)))))
+
+(defun ecfg-indent-buffer (buffer)
+  "Indent BUFFER"
+  (save-current-buffer
+    (set-buffer buffer)
+    (indent-region (point-min) (point-max))
+    (save-buffer)))
+
+(defun ecfg-indent-file-buffers ()
+  "Indent all file visiting buffers"
+  (interactive)
+  (mapc 'ecfg-indent-buffer
+        (remove-if-not 'buffer-file-name (buffer-list))))
