@@ -10,10 +10,10 @@
 
 ;; computer specific settings
 (when (string= system-name "SERGEY-K")
-  (defvar ecfg-default-frame-rect '((top . 20) (left . 110) (width . 130) (height . 55))
+  (defvar ecfg-default-frame-rect '((top . 20) (left . 150) (width . 132) (height . 60))
     "Size and position of a window"))
 
-(defvar ecfg-default-font-desc "-outline-Courier New-normal-normal-normal-mono-13-*-*-*-c-*-iso8859-1"
+(defvar ecfg-default-font-desc "Consolas-10"
   "Default font")
 
 (defvar ecfg-default-org-file "C:/My Dropbox/scratch.org"
