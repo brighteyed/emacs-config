@@ -53,6 +53,7 @@
 (load "~/emacs/ecfg-org.el")
 (load "~/emacs/ecfg-recentf.el")
 (load "~/emacs/ecfg-ruby.el")
+(load "~/emacs/ecfg-yaml.el")
 
 ;; Bind a key to ~/.emacs
 (global-set-key (kbd "<f11>")

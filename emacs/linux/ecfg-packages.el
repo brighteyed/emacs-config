@@ -23,6 +23,7 @@
                ruby-end
                rvm
                switch-window
+               yaml-mode
 
                ;; emacs-goodies-el
                (:name emacs-goodies-el
