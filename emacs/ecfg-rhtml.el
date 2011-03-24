@@ -6,4 +6,4 @@
 ;; rhtml-mode
 (require 'rhtml-mode)
 (add-to-list 'auto-mode-alist
-             '("\\.erb\\'" . rhtml-mode))
+             '("\\.html\.erb$" . rhtml-mode))

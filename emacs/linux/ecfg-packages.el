@@ -19,12 +19,15 @@
                highlight-parentheses
                highlight-symbol
                js2-mode
-               rhtml-mode
                ruby-block
                ruby-end
                rvm
                switch-window
                yaml-mode
+
+               (:name rhtml-mode
+                      :type git
+                      :url "https://github.com/bodhi/rhtml.git")
 
                ;; emacs-goodies-el
                (:name emacs-goodies-el
