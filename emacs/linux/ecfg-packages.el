@@ -19,6 +19,7 @@
                highlight-parentheses
                highlight-symbol
                js2-mode
+               rhtml-mode
                ruby-block
                ruby-end
                rvm

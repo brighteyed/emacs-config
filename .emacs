@@ -52,6 +52,7 @@
 (load "~/emacs/ecfg-lisp.el")
 (load "~/emacs/ecfg-org.el")
 (load "~/emacs/ecfg-recentf.el")
+(load "~/emacs/ecfg-rhtml.el")
 (load "~/emacs/ecfg-ruby.el")
 (load "~/emacs/ecfg-yaml.el")
 
