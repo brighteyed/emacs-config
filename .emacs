@@ -47,6 +47,7 @@
 (load "~/emacs/ecfg-color-theme.el")
 (load "~/emacs/ecfg-cua.el")
 (load "~/emacs/ecfg-edit-server.el")
+(load "~/emacs/ecfg-git.el")
 (load "~/emacs/ecfg-go.el")
 (load "~/emacs/ecfg-js.el")
 (load "~/emacs/ecfg-lisp.el")

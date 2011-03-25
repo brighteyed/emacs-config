@@ -19,6 +19,7 @@
                highlight-parentheses
                highlight-symbol
                js2-mode
+               magit
                ruby-block
                ruby-end
                rvm
