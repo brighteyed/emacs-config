@@ -30,7 +30,9 @@
                       :type git
                       :url "https://github.com/bodhi/rhtml.git")
 
-               ;; emacs-goodies-el
+               (:name findr
+                      :type emacswiki)
+
                (:name emacs-goodies-el
                       :type apt-get)))
 
