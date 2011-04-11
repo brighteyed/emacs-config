@@ -72,3 +72,29 @@
   (interactive)
   (mapc 'ecfg-indent-buffer
         (remove-if-not 'buffer-file-name (buffer-list))))
+
+;; Buffer width and height
+(and
+  ;; enlarge buffer height
+  (global-set-key (kbd "<M-kp-down>")
+                  (lambda ()
+                    (interactive)
+                    (enlarge-window -1)))
+
+  ;; shrink buffer height
+  (global-set-key (kbd "<M-kp-up>")
+                  (lambda ()
+                    (interactive)
+                    (enlarge-window 1)))
+
+  ;; enlarge buffer width
+  (global-set-key (kbd "<M-kp-right>")
+                  (lambda ()
+                    (interactive)
+                    (enlarge-window 1 t)))
+
+  ;; shrink buffer width
+  (global-set-key (kbd "<M-kp-left>")
+                  (lambda ()
+                    (interactive)
+                    (enlarge-window -1 t))))
