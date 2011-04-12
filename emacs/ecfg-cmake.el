@@ -5,4 +5,7 @@
 
 ;; cmake-mode
 (require 'cmake-mode)
-(add-to-list 'auto-mode-alist '("CMakeLists\\.txt\\'" . cmake-mode))
+
+(dolist (regex '("CMakeLists\\.txt\\'" "\\.cmake$"))
+  (add-to-list 'auto-mode-alist `(,regex . cmake-mode)))
+
